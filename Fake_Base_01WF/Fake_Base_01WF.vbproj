@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{090C1155-B120-4612-87A8-BD48D98E4C75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Fake_Base_01WF.My.MyApplication</StartupObject>
+    <RootNamespace>Fake_Base_01WF</RootNamespace>
+    <AssemblyName>Fake_Base_01WF</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Fake_Base_01WF.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Fake_Base_01WF.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\FB_ICO1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfSharp-gdi, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-gdi.1.50.5147\lib\net20\PdfSharp-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting-gdi, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp-gdi.1.50.5147\lib\net20\PdfSharp.Charting-gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basFB01.vb" />
+    <Compile Include="Dialogs\frmExport.Designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmKeyCode.Designer.vb">
+      <DependentUpon>frmKeyCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmKeyCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmPath.Designer.vb">
+      <DependentUpon>frmPath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmPath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmPrint.Designer.vb">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmScreen2.Designer.vb">
+      <DependentUpon>frmScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmSystem.Designer.vb">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objects\clsChordParser.vb" />
+    <Compile Include="Objects\clsDBase.vb" />
+    <Compile Include="Objects\clsHybridParser.vb" />
+    <Compile Include="Objects\clsLyric_Browser.vb" />
+    <Compile Include="Objects\clsPrint.vb" />
+    <Compile Include="Objects\clsSearch_Result.vb" />
+    <Compile Include="Objects\clsSongFile.vb" />
+    <Compile Include="Objects\clsSysSettings.vb" />
+    <Compile Include="Dialogs\frmChords.Designer.vb">
+      <DependentUpon>frmChords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmChords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayer.Designer.vb">
+      <DependentUpon>frmPlayer.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmLV.Designer.vb">
+      <DependentUpon>frmLV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmLV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmSearchDB.Designer.vb">
+      <DependentUpon>frmSearchDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmSearchDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSongEdit.Designer.vb">
+      <DependentUpon>frmSongEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSongEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\frmText.Designer.vb">
+      <DependentUpon>frmText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\frmText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Objects\clsTypeEditors.vb" />
+    <Compile Include="User_Controls\udPrint_Preview.Designer.vb">
+      <DependentUpon>udPrint_Preview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\udPrint_Preview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmKeyCode.resx">
+      <DependentUpon>frmKeyCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmPath.resx">
+      <DependentUpon>frmPath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmPrint.resx">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmChords.resx">
+      <DependentUpon>frmChords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmScreen2.resx">
+      <DependentUpon>frmScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmSystem.resx">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayer.resx">
+      <DependentUpon>frmPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmLV.resx">
+      <DependentUpon>frmLV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmSearchDB.resx">
+      <DependentUpon>frmSearchDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSongEdit.resx">
+      <DependentUpon>frmSongEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\frmText.resx">
+      <DependentUpon>frmText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\udPrint_Preview.resx">
+      <DependentUpon>udPrint_Preview.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fakebase.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FKBA_Settings.txt" />
+    <None Include="Resources\FB_ICO1.ico" />
+    <None Include="Resources\half_note2.png" />
+    <None Include="Resources\half_note.png" />
+    <None Include="Resources\dim_symbol.png" />
+    <None Include="Resources\dim_symbol.bmp" />
+    <None Include="packages.config" />
+    <None Include="Resources\W_01.png" />
+    <None Include="Resources\T_Clef_01.png" />
+    <None Include="Resources\slash_01.png" />
+    <None Include="Resources\simile_01.png" />
+    <None Include="Resources\Sharp_02.png" />
+    <None Include="Resources\sharp_01.png" />
+    <None Include="Resources\rpt_R_01.png" />
+    <None Include="Resources\rpt_L_01.png" />
+    <None Include="Resources\rest_01.png" />
+    <None Include="Resources\R16_01.png" />
+    <None Include="Resources\r08_01.png" />
+    <None Include="Resources\QR_01.png" />
+    <None Include="Resources\Nat_01.png" />
+    <None Include="Resources\marcato_02.png" />
+    <None Include="Resources\marcato_01.png" />
+    <None Include="Resources\flat_01.png" />
+    <None Include="Resources\fermata_01.png" />
+    <None Include="Resources\break_01.png" />
+    <None Include="Resources\B_Clef_01.png" />
+    <None Include="Resources\16_01.png" />
+    <None Include="Resources\08_01.png" />
+    <None Include="Resources\04_01.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

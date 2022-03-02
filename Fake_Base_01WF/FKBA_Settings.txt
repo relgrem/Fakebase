@@ -1,0 +1,3 @@
+﻿[Fakebase Settings]
+
+DIR=C:\Users\WE_R!!!\Documents\Sheets
